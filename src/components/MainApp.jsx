@@ -191,12 +191,12 @@ const MainApp = ({ user, role, currentRoom, onLogout, showToast }) => {
       if (socket && isConnected) {
         socket.emit('leave-room', { roomId: currentRoom?.id, userId: user?.id });
       }
-      onLogout(); // Changed: Now logs out instead of just leaving room
+      onLogout(); 
       showToast('Left the room');
     }
   };
 
-  // New function for student logout from dropdown
+  //  student logout from dropdown
   const handleStudentLogout = () => {
     if (window.confirm('Are you sure you want to logout?')) {
       if (socket && isConnected && currentRoom?.id) {
@@ -288,7 +288,7 @@ const MainApp = ({ user, role, currentRoom, onLogout, showToast }) => {
             <div className="user-avatar">{user?.avatar || (isTeacher ? 'T' : 'S')}</div>
             <span className="user-name">{user?.name || 'User'}</span>
             <div className="user-dropdown">
-              {/* Changed: For students, this now calls handleStudentLogout instead of handleLeaveRoom */}
+            
               <div className="dropdown-item" onClick={isTeacher ? onLogout : handleStudentLogout}>
                 <i className="fas fa-sign-out-alt"></i> Logout
               </div>

@@ -73,14 +73,10 @@ export const copyToClipboard = async (text) => {
 // Get file extension from language
 export const getFileExtension = (language) => {
   const extensions = {
-    javascript: 'js',
-    typescript: 'ts',
     html: 'html',
     css: 'css',
-    python: 'py',
-    java: 'java',
-    cpp: 'cpp',
-    csharp: 'cs'
+    javascript: 'js',
+   
   };
   return extensions[language] || 'txt';
 };
@@ -88,15 +84,10 @@ export const getFileExtension = (language) => {
 // Get language from file extension
 export const getLanguageFromExtension = (extension) => {
   const languages = {
-    js: 'javascript',
-    ts: 'typescript',
     html: 'html',
-    htm: 'html',
     css: 'css',
-    py: 'python',
-    java: 'java',
-    cpp: 'cpp',
-    cs: 'csharp'
+    js: 'javascript',
+   
   };
   return languages[extension.toLowerCase()] || 'javascript';
 };

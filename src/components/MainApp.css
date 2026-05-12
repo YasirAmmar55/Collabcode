@@ -154,8 +154,6 @@
     display: none;
   }
 }
-/* Add these at the END of your MainApp.css file */
-
 /* ========== 🆕 CONNECTION STATUS VARIATIONS ========== */
 .status-indicator.connected {
   background-color: var(--success);

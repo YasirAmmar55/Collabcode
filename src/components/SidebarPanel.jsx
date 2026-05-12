@@ -1,5 +1,4 @@
-// SidebarPanel.jsx - REAL-TIME CHAT & PARTICIPANTS VERSION
-// 🔴 CHANGES: Socket integration for real-time chat, dynamic participants from server
+// sidebar panel for participants list and chat
 
 import React, { useState, useEffect, useRef } from 'react';
 import { 

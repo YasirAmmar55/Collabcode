@@ -463,7 +463,7 @@ for(let i = 1; i <= 5; i++) {
     showToast('Editor cleared');
   };
 
-  // ========== RENDER COMPONENT - ICONS ONLY (No Text Labels) ==========
+  // ========== RENDER COMPONENT ==========
   return (
     <div className="editor-container">
       <div className="editor-header">
@@ -488,17 +488,17 @@ for(let i = 1; i <= 5; i++) {
             ))}
           </select>
           
-          {/* 🔴 ICON ONLY - Run Button */}
+          {/*  Run Button */}
           <button className="btn btn-primary" onClick={handleRunCode} title="Run (Ctrl+Enter)">
             <FaPlay />
           </button>
           
-          {/* 🔴 ICON ONLY - Save Button */}
+          {/*  Save Button */}
           <button className="btn btn-outline" onClick={handleSaveCode} title="Save (Ctrl+S)">
             <FaSave />
           </button>
           
-          {/* 🔴 ICON ONLY - Clear Button */}
+          {/*  Clear Button */}
           {isTeacher && (
           <button className="btn btn-outline" onClick={handleClearCode} title="Clear Editor">
             <FaTrash />
