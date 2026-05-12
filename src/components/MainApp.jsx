@@ -217,10 +217,10 @@ const MainApp = ({ user, role, currentRoom, onLogout, showToast }) => {
           <span>CollabCode {currentRoom ? `- ${currentRoom.name}` : ''}</span>
           {isStudent && (
             <span className="role-badge student">
-              👨‍🎓 Student Mode {!roomPermissions.editCode}
+              👨‍🎓 Student  {!roomPermissions.editCode}
             </span>
           )}
-          {isTeacher && <span className="role-badge teacher"> 👨‍🏫 Teacher Mode</span>}
+          {isTeacher && <span className="role-badge teacher"> 👨‍🏫 Teacher </span>}
         </div>
         
         <div className="room-id-display">
